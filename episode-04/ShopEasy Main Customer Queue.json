@@ -1,0 +1,589 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "4c407881-7f5c-46cb-a48d-ba9ae4c3ed51",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 130.4,
+      "y": 286.4
+    },
+    "ActionMetadata": {
+      "5b587cb7-87eb-410f-a0c5-2cdc66bcd301": {
+        "position": {
+          "x": 2294.4,
+          "y": 180.8
+        },
+        "conditionMetadata": [
+          {
+            "id": "fdb0a52e-395f-4429-b133-71dcfe5b889f",
+            "value": "1"
+          },
+          {
+            "id": "9b6d60f0-197b-42c2-a4ea-a86c38efd5c0",
+            "value": "2"
+          }
+        ]
+      },
+      "6df632ab-9d9a-43b2-a5cb-3be1c07516fa": {
+        "position": {
+          "x": 1668.8,
+          "y": 66.4
+        },
+        "parameters": {
+          "Attributes": {
+            "CustomerCallbackNumber": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "CustomerCallbackNumber"
+        ]
+      },
+      "6a93afe4-4d6a-44ea-b72b-e9c29f78193c": {
+        "position": {
+          "x": 2605.6,
+          "y": 202.4
+        }
+      },
+      "7200789d-939c-47ff-a253-48253117db09": {
+        "position": {
+          "x": 2947.2,
+          "y": 174.4
+        }
+      },
+      "e43be083-3b89-4168-9811-2dbdb10f132e": {
+        "position": {
+          "x": 3242.4,
+          "y": 92
+        }
+      },
+      "874aad59-806d-4811-8840-cada0344c648": {
+        "position": {
+          "x": 1946.4,
+          "y": 659.2
+        }
+      },
+      "0b810af4-6079-4006-9eb7-7a3cfefd1c7d": {
+        "position": {
+          "x": 1673.6,
+          "y": 717.6
+        }
+      },
+      "7fa99577-bbb8-4db0-ae22-73bee03821b1": {
+        "position": {
+          "x": 2049.6,
+          "y": 375.2
+        },
+        "parameters": {
+          "Attributes": {
+            "CustomerCallbackNumber": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "CustomerCallbackNumber"
+        ]
+      },
+      "88e43dfb-6f2b-43c8-9ee2-2311bc0281e0": {
+        "position": {
+          "x": 1270.4,
+          "y": 200
+        },
+        "conditionMetadata": [
+          {
+            "id": "5c588aff-d41d-4048-9122-978addd0226b",
+            "value": "1"
+          },
+          {
+            "id": "0cd8fd70-b19d-4cce-8191-70c5e49b707e",
+            "value": "2"
+          }
+        ]
+      },
+      "569ae53b-5018-4a42-93e4-fbb127c2350b": {
+        "position": {
+          "x": 1681.6,
+          "y": 374.4
+        },
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "9613216f-1c51-4703-9bbe-ca7bb5b89d50": {
+        "position": {
+          "x": 2230.4,
+          "y": 695.2
+        }
+      },
+      "b63a6d37-0809-4d12-92f2-ec5d20263ef5": {
+        "position": {
+          "x": 3544,
+          "y": 306.4
+        }
+      },
+      "76a53d62-7f00-4fb3-bf35-b320214ce6fe": {
+        "position": {
+          "x": 1443.2,
+          "y": 998.4
+        }
+      },
+      "b44cc628-b6f4-4af5-ba7b-9cea90356834": {
+        "position": {
+          "x": 1009.6,
+          "y": 370.4
+        },
+        "conditionMetadata": [
+          {
+            "id": "3083b0d8-94d4-43ef-8cde-33c6a448d09e",
+            "value": "1"
+          }
+        ]
+      },
+      "1596a7ab-72b3-4d99-b631-3b447b7d25aa": {
+        "position": {
+          "x": 772.8,
+          "y": 157.6
+        }
+      },
+      "4c407881-7f5c-46cb-a48d-ba9ae4c3ed51": {
+        "position": {
+          "x": 320,
+          "y": 332
+        },
+        "parameters": {
+          "QueueId": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true,
+        "queue": "$.Queue.ARN"
+      },
+      "396022c3-223f-47d3-9a69-64af10165421": {
+        "position": {
+          "x": 614.4,
+          "y": 532
+        },
+        "parameters": {
+          "Attributes": {
+            "CustomerPositionInQueue": {
+              "useDynamic": true
+            },
+            "EstimatedWaitMinutes": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "CustomerPositionInQueue",
+          "EstimatedWaitMinutes"
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "ShopEasy Main Customer Queue",
+    "description": "",
+    "type": "customerQueue",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "The number you enter for your callback is. $.Attributes.CustomerCallbackNumber\n\nTo confirm press 1 or press 2 to re-enter"
+      },
+      "Identifier": "5b587cb7-87eb-410f-a0c5-2cdc66bcd301",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "6a93afe4-4d6a-44ea-b72b-e9c29f78193c",
+        "Conditions": [
+          {
+            "NextAction": "6a93afe4-4d6a-44ea-b72b-e9c29f78193c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "88e43dfb-6f2b-43c8-9ee2-2311bc0281e0",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "6a93afe4-4d6a-44ea-b72b-e9c29f78193c",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "6a93afe4-4d6a-44ea-b72b-e9c29f78193c",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "6a93afe4-4d6a-44ea-b72b-e9c29f78193c",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "CustomerCallbackNumber": "$.CustomerEndpoint.Address"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "6df632ab-9d9a-43b2-a5cb-3be1c07516fa",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "5b587cb7-87eb-410f-a0c5-2cdc66bcd301",
+        "Errors": [
+          {
+            "NextAction": "5b587cb7-87eb-410f-a0c5-2cdc66bcd301",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "CallbackNumber": "$.Attributes.CustomerCallbackNumber"
+      },
+      "Identifier": "6a93afe4-4d6a-44ea-b72b-e9c29f78193c",
+      "Type": "UpdateContactCallbackNumber",
+      "Transitions": {
+        "NextAction": "7200789d-939c-47ff-a253-48253117db09",
+        "Errors": [
+          {
+            "NextAction": "0b810af4-6079-4006-9eb7-7a3cfefd1c7d",
+            "ErrorType": "InvalidCallbackNumber"
+          },
+          {
+            "NextAction": "0b810af4-6079-4006-9eb7-7a3cfefd1c7d",
+            "ErrorType": "CallbackNumberNotDialable"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RetryDelaySeconds": "600",
+        "InitialCallDelaySeconds": "4",
+        "MaximumConnectionAttempts": "1",
+        "CallbackMode": "AgentFirst"
+      },
+      "Identifier": "7200789d-939c-47ff-a253-48253117db09",
+      "Type": "CreateCallbackContact",
+      "Transitions": {
+        "NextAction": "e43be083-3b89-4168-9811-2dbdb10f132e",
+        "Errors": [
+          {
+            "NextAction": "b63a6d37-0809-4d12-92f2-ec5d20263ef5",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Your callback has be placed successfully"
+      },
+      "Identifier": "e43be083-3b89-4168-9811-2dbdb10f132e",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b63a6d37-0809-4d12-92f2-ec5d20263ef5",
+        "Errors": [
+          {
+            "NextAction": "b63a6d37-0809-4d12-92f2-ec5d20263ef5",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "874aad59-806d-4811-8840-cada0344c648",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "9613216f-1c51-4703-9bbe-ca7bb5b89d50",
+        "Conditions": [
+          {
+            "NextAction": "569ae53b-5018-4a42-93e4-fbb127c2350b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "9613216f-1c51-4703-9bbe-ca7bb5b89d50",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "9613216f-1c51-4703-9bbe-ca7bb5b89d50",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Sorry the number enter is invalid. Please wait to try again"
+      },
+      "Identifier": "0b810af4-6079-4006-9eb7-7a3cfefd1c7d",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "874aad59-806d-4811-8840-cada0344c648",
+        "Errors": [
+          {
+            "NextAction": "874aad59-806d-4811-8840-cada0344c648",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "CustomerCallbackNumber": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "7fa99577-bbb8-4db0-ae22-73bee03821b1",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "5b587cb7-87eb-410f-a0c5-2cdc66bcd301",
+        "Errors": [
+          {
+            "NextAction": "5b587cb7-87eb-410f-a0c5-2cdc66bcd301",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "To receive a callback on this number please press 1. Or Press 2 to enter a different number"
+      },
+      "Identifier": "88e43dfb-6f2b-43c8-9ee2-2311bc0281e0",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "6df632ab-9d9a-43b2-a5cb-3be1c07516fa",
+        "Conditions": [
+          {
+            "NextAction": "6df632ab-9d9a-43b2-a5cb-3be1c07516fa",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "569ae53b-5018-4a42-93e4-fbb127c2350b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "6df632ab-9d9a-43b2-a5cb-3be1c07516fa",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "6df632ab-9d9a-43b2-a5cb-3be1c07516fa",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "6df632ab-9d9a-43b2-a5cb-3be1c07516fa",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Please enter your callback number without your country code",
+        "DTMFConfiguration": {
+          "InterdigitTimeLimitSeconds": "5"
+        },
+        "InputValidation": {
+          "PhoneNumberValidation": {
+            "NumberFormat": "Local",
+            "CountryCode": "US"
+          }
+        }
+      },
+      "Identifier": "569ae53b-5018-4a42-93e4-fbb127c2350b",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "7fa99577-bbb8-4db0-ae22-73bee03821b1",
+        "Errors": [
+          {
+            "NextAction": "0b810af4-6079-4006-9eb7-7a3cfefd1c7d",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "0b810af4-6079-4006-9eb7-7a3cfefd1c7d",
+            "ErrorType": "InvalidPhoneNumber"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Still you number is invalid please wait to be connect to the next agent"
+      },
+      "Identifier": "9613216f-1c51-4703-9bbe-ca7bb5b89d50",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "76a53d62-7f00-4fb3-bf35-b320214ce6fe",
+        "Errors": [
+          {
+            "NextAction": "76a53d62-7f00-4fb3-bf35-b320214ce6fe",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "b63a6d37-0809-4d12-92f2-ec5d20263ef5",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Text": "This is supposed to be say a music"
+      },
+      "Identifier": "76a53d62-7f00-4fb3-bf35-b320214ce6fe",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b63a6d37-0809-4d12-92f2-ec5d20263ef5",
+        "Errors": [
+          {
+            "NextAction": "b63a6d37-0809-4d12-92f2-ec5d20263ef5",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "All our agents are busy, you can request for a callback or wait in queue for the available agents\n\nFor callbacks please press 1."
+      },
+      "Identifier": "b44cc628-b6f4-4af5-ba7b-9cea90356834",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "76a53d62-7f00-4fb3-bf35-b320214ce6fe",
+        "Conditions": [
+          {
+            "NextAction": "88e43dfb-6f2b-43c8-9ee2-2311bc0281e0",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "76a53d62-7f00-4fb3-bf35-b320214ce6fe",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "76a53d62-7f00-4fb3-bf35-b320214ce6fe",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "76a53d62-7f00-4fb3-bf35-b320214ce6fe",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Your current position in Queue is $.Attributes.CustomerPositionInQueue and you will have to wait for $.Attributes.EstimatedWaitMinutes munites"
+      },
+      "Identifier": "1596a7ab-72b3-4d99-b631-3b447b7d25aa",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b44cc628-b6f4-4af5-ba7b-9cea90356834",
+        "Errors": [
+          {
+            "NextAction": "b44cc628-b6f4-4af5-ba7b-9cea90356834",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueChannel": "Voice",
+        "QueueId": "$.Queue.ARN",
+        "GetContactMetric": "True"
+      },
+      "Identifier": "4c407881-7f5c-46cb-a48d-ba9ae4c3ed51",
+      "Type": "GetMetricData",
+      "Transitions": {
+        "NextAction": "396022c3-223f-47d3-9a69-64af10165421",
+        "Errors": [
+          {
+            "NextAction": "396022c3-223f-47d3-9a69-64af10165421",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "CustomerPositionInQueue": "$.Metrics.Contact.PositionInQueue",
+          "EstimatedWaitMinutes": "$.Metrics.Queue.EstimatedWaitTime"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "396022c3-223f-47d3-9a69-64af10165421",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "1596a7ab-72b3-4d99-b631-3b447b7d25aa",
+        "Errors": [
+          {
+            "NextAction": "1596a7ab-72b3-4d99-b631-3b447b7d25aa",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}
