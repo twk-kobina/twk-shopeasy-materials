@@ -1,0 +1,767 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "set-logging",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 74.4,
+      "y": 126.4
+    },
+    "ActionMetadata": {
+      "disconnect-ai-stub": {
+        "position": {
+          "x": 3760,
+          "y": 467.2
+        },
+        "isFriendlyName": true
+      },
+      "play-ai-coming-soon": {
+        "position": {
+          "x": 2531.2,
+          "y": 661.6
+        },
+        "isFriendlyName": true
+      },
+      "set-logging": {
+        "position": {
+          "x": 281.6,
+          "y": 97.6
+        },
+        "isFriendlyName": true
+      },
+      "set-voice": {
+        "position": {
+          "x": 559.2,
+          "y": 121.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "en-US"
+          }
+        },
+        "overrideConsoleVoice": true
+      },
+      "disconnect-closed": {
+        "position": {
+          "x": 1537.6,
+          "y": 637.6
+        },
+        "isFriendlyName": true
+      },
+      "check-hours": {
+        "position": {
+          "x": 855.2,
+          "y": 92.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "HoursOfOperationId": {
+            "displayName": "ShopEasy Business Hours"
+          }
+        },
+        "Hours": {
+          "id": "arn:aws:connect:us-west-2:456495836580:instance/c4e12c09-094e-41c2-9ae5-9feef0be45c3/operating-hours/10899ebe-ed7e-4fb1-a9dc-7b4e053aa7cc",
+          "text": "ShopEasy Business Hours"
+        }
+      },
+      "play-closed-message": {
+        "position": {
+          "x": 1155.2,
+          "y": 401.6
+        },
+        "isFriendlyName": true
+      },
+      "transfer-error-disconnect": {
+        "position": {
+          "x": 3842.4,
+          "y": 144.8
+        },
+        "isFriendlyName": true
+      },
+      "set-queue-general-orders": {
+        "position": {
+          "x": 2531.2,
+          "y": -118.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "General Support"
+          }
+        },
+        "queue": {
+          "text": "General Support"
+        }
+      },
+      "set-queue-returns": {
+        "position": {
+          "x": 2531.2,
+          "y": 141.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "Returns"
+          }
+        },
+        "queue": {
+          "text": "Returns"
+        }
+      },
+      "set-queue-general-other": {
+        "position": {
+          "x": 2531.2,
+          "y": 401.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "General Support"
+          }
+        },
+        "queue": {
+          "text": "General Support"
+        }
+      },
+      "set-queue-general-operator": {
+        "position": {
+          "x": 2531.2,
+          "y": 921.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "General Support"
+          }
+        },
+        "queue": {
+          "text": "General Support"
+        }
+      },
+      "transfer-to-queue": {
+        "position": {
+          "x": 3308,
+          "y": 382.4
+        },
+        "isFriendlyName": true
+      },
+      "transfer-error-play": {
+        "position": {
+          "x": 3563.2,
+          "y": 232
+        },
+        "isFriendlyName": true
+      },
+      "set-attr-menu-failed": {
+        "position": {
+          "x": 2531.2,
+          "y": 1181.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "entry_path": {
+              "useDynamic": false
+            },
+            "menu_failed": {
+              "useDynamic": false
+            }
+          }
+        },
+        "dynamicParams": []
+      },
+      "set-queue-general-failed": {
+        "position": {
+          "x": 2859.2,
+          "y": 1175.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "General Support"
+          }
+        },
+        "queue": {
+          "text": "General Support"
+        }
+      },
+      "set-attr-ai-stub": {
+        "position": {
+          "x": 2198.4,
+          "y": 663.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "entry_path": {
+              "useDynamic": false
+            }
+          }
+        },
+        "dynamicParams": []
+      },
+      "play-welcome": {
+        "position": {
+          "x": 1139.2,
+          "y": 77.6
+        },
+        "isFriendlyName": true
+      },
+      "set-attr-orders": {
+        "position": {
+          "x": 2134.4,
+          "y": -288.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "entry_path": {
+              "useDynamic": false
+            }
+          }
+        },
+        "dynamicParams": []
+      },
+      "set-attr-returns": {
+        "position": {
+          "x": 2216,
+          "y": -6.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "entry_path": {
+              "useDynamic": false
+            }
+          }
+        },
+        "dynamicParams": []
+      },
+      "set-attr-other": {
+        "position": {
+          "x": 2236.8,
+          "y": 315.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "entry_path": {
+              "useDynamic": false
+            }
+          }
+        },
+        "dynamicParams": []
+      },
+      "set-attr-operator": {
+        "position": {
+          "x": 2152,
+          "y": 939.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "entry_path": {
+              "useDynamic": false
+            },
+            "escalation_reason": {
+              "useDynamic": false
+            }
+          }
+        },
+        "dynamicParams": []
+      },
+      "play-menu-failed": {
+        "position": {
+          "x": 2024,
+          "y": 1303.2
+        },
+        "isFriendlyName": true
+      },
+      "main-menu": {
+        "position": {
+          "x": 1715.2,
+          "y": 92
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": [
+          {
+            "id": "8573b4c4-963a-4f59-9293-84da8562214c",
+            "value": "1"
+          },
+          {
+            "id": "e8622314-9b6f-432e-bf92-0f06a0312cba",
+            "value": "2"
+          },
+          {
+            "id": "d3788532-8575-4677-b97c-4d8b34595466",
+            "value": "3"
+          },
+          {
+            "id": "5d5aff5a-de6c-4287-b2ca-3e598e6fc300",
+            "value": "4"
+          },
+          {
+            "id": "bede8a79-54aa-4c55-8365-fe31298aece3",
+            "value": "0"
+          }
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "ShopEasy Main Inbound 1",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "disconnect-ai-stub",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Our A.I. assistant is coming soon. Please call back in a future episode of this series. Goodbye."
+      },
+      "Identifier": "play-ai-coming-soon",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "disconnect-ai-stub",
+        "Errors": [
+          {
+            "NextAction": "disconnect-ai-stub",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "set-logging",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "set-voice"
+      }
+    },
+    {
+      "Parameters": {
+        "TextToSpeechEngine": "Generative",
+        "TextToSpeechStyle": "None",
+        "TextToSpeechVoice": "Tiffany"
+      },
+      "Identifier": "set-voice",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "check-hours"
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "disconnect-closed",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "HoursOfOperationId": "arn:aws:connect:us-west-2:456495836580:instance/c4e12c09-094e-41c2-9ae5-9feef0be45c3/operating-hours/10899ebe-ed7e-4fb1-a9dc-7b4e053aa7cc"
+      },
+      "Identifier": "check-hours",
+      "Type": "CheckHoursOfOperation",
+      "Transitions": {
+        "NextAction": "play-closed-message",
+        "Conditions": [
+          {
+            "NextAction": "play-welcome",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "True"
+              ]
+            }
+          },
+          {
+            "NextAction": "play-closed-message",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "False"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "play-closed-message",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Thank you for calling ShopEasy. Our offices are currently closed. We're open Monday through Friday from nine a.m. to nine p.m., and weekends from ten a.m. to six p.m. Eastern time. Please call back during those hours, or visit shopeasy dot com for help. Goodbye."
+      },
+      "Identifier": "play-closed-message",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "disconnect-closed",
+        "Errors": [
+          {
+            "NextAction": "disconnect-closed",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "transfer-error-disconnect",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-west-2:456495836580:instance/c4e12c09-094e-41c2-9ae5-9feef0be45c3/queue/9e082c66-b343-483d-8745-33c08a836565"
+      },
+      "Identifier": "set-queue-general-orders",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "transfer-to-queue",
+        "Errors": [
+          {
+            "NextAction": "transfer-error-play",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-west-2:456495836580:instance/c4e12c09-094e-41c2-9ae5-9feef0be45c3/queue/1f908bba-90f6-4882-aa64-d5d7a4f26e4a"
+      },
+      "Identifier": "set-queue-returns",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "transfer-to-queue",
+        "Errors": [
+          {
+            "NextAction": "transfer-error-play",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-west-2:456495836580:instance/c4e12c09-094e-41c2-9ae5-9feef0be45c3/queue/9e082c66-b343-483d-8745-33c08a836565"
+      },
+      "Identifier": "set-queue-general-other",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "transfer-to-queue",
+        "Errors": [
+          {
+            "NextAction": "transfer-error-play",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-west-2:456495836580:instance/c4e12c09-094e-41c2-9ae5-9feef0be45c3/queue/9e082c66-b343-483d-8745-33c08a836565"
+      },
+      "Identifier": "set-queue-general-operator",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "transfer-to-queue",
+        "Errors": [
+          {
+            "NextAction": "transfer-error-play",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "transfer-to-queue",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "transfer-error-play",
+        "Errors": [
+          {
+            "NextAction": "transfer-error-play",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "transfer-error-play",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "We're sorry, all of our agents are currently busy. Please call back in a few minutes. Goodbye."
+      },
+      "Identifier": "transfer-error-play",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "transfer-error-disconnect",
+        "Errors": [
+          {
+            "NextAction": "transfer-error-disconnect",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entry_path": "menu_failed",
+          "menu_failed": "true"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "set-attr-menu-failed",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "set-queue-general-failed",
+        "Errors": [
+          {
+            "NextAction": "set-queue-general-failed",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-west-2:456495836580:instance/c4e12c09-094e-41c2-9ae5-9feef0be45c3/queue/9e082c66-b343-483d-8745-33c08a836565"
+      },
+      "Identifier": "set-queue-general-failed",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "transfer-to-queue",
+        "Errors": [
+          {
+            "NextAction": "transfer-error-play",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entry_path": "ai_stub"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "set-attr-ai-stub",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "play-ai-coming-soon",
+        "Errors": [
+          {
+            "NextAction": "play-ai-coming-soon",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Thank you for calling ShopEasy. We're glad you called."
+      },
+      "Identifier": "play-welcome",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "main-menu",
+        "Errors": [
+          {
+            "NextAction": "main-menu",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entry_path": "orders"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "set-attr-orders",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "set-queue-general-orders",
+        "Errors": [
+          {
+            "NextAction": "set-queue-general-orders",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entry_path": "returns"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "set-attr-returns",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "set-queue-returns",
+        "Errors": [
+          {
+            "NextAction": "set-queue-returns",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entry_path": "other"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "set-attr-other",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "set-queue-general-other",
+        "Errors": [
+          {
+            "NextAction": "set-queue-general-other",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entry_path": "operator",
+          "escalation_reason": "customer_request"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "set-attr-operator",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "set-queue-general-operator",
+        "Errors": [
+          {
+            "NextAction": "set-queue-general-operator",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "We didn't catch that. We'll connect you to an agent who can help."
+      },
+      "Identifier": "play-menu-failed",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "set-attr-menu-failed",
+        "Errors": [
+          {
+            "NextAction": "set-attr-menu-failed",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "To check on an order or shipping, press 1. For returns or refunds, press 2. For anything else, press 3. To speak with our A.I. assistant about anything at all, press 4. You can press 0 at any time to reach a human agent."
+      },
+      "Identifier": "main-menu",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "play-menu-failed",
+        "Conditions": [
+          {
+            "NextAction": "set-attr-orders",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "set-attr-returns",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          },
+          {
+            "NextAction": "set-attr-other",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "3"
+              ]
+            }
+          },
+          {
+            "NextAction": "set-attr-ai-stub",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "4"
+              ]
+            }
+          },
+          {
+            "NextAction": "set-attr-operator",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "0"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "play-menu-failed",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "play-menu-failed",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "play-menu-failed",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}
